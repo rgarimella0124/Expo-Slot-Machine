@@ -1,6 +1,6 @@
 import * as React from "react";
 import { View, Text } from "react-native";
-
+import SlotMachine from "./Slot";
 export default function App() {
   return (
     <View
@@ -10,7 +10,8 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>Universal React with Expo</Text>
+      <SlotMachine text={1234566} />
+      <SlotMachine text="hello" range="abcdefghijklmnopqrstuvwxyz" />
     </View>
   );
 }
